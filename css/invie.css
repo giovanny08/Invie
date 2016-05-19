@@ -1,0 +1,48 @@
+/*
+tipo de selector {
+	propiedad: valor;
+	propiedad-2: valor;
+}
+*/
+
+/* Selector universal permite dar estilos a todo lo que hay en la pagina */
+* {
+	border: 1px solid red;
+	margin: 10px;
+}
+
+/* Selector de etiqueta hace referencia a las etiquetas HTML */
+header {
+	background: blue;
+}
+
+section {
+	background: purple;
+}
+
+/* Selector descendente funciona como una cascada */
+article h3 {
+	color: green;
+}
+
+/* Selectores de clase hacen referencia al atributo class que las etiquetas*/
+.title-a {
+	background: yellow;
+}
+
+.title-b {
+	background: salmon;
+}
+
+/* Selector de id hace referencia al atributo id de las etiquetas*/
+#header {
+	border: 3px solid black;
+}
+
+#portada {
+	border: 3px solid orange;
+}
+
+#guitarras {
+	border: 3px solid brown;
+}
