@@ -1,6 +1,11 @@
 /* Selector de clases */
 .titulo {
+	font-family: 'Montserrat', sans-serif; /* Fuente tomada de google fonts */
 	font-size: 70px; /* Tamaño */
+}
+
+body {
+	font-family: 'Allerta', sans-serif; /* Fuente tomada de google fonts */
 }
 
 .title-a {
@@ -13,6 +18,7 @@
 
 /* Selector descendente */
 .guitarras h2 {
+	font-family: 'Montserrat', sans-serif;
 	font-size: 35px;
 }
 
