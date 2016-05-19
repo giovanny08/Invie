@@ -33,4 +33,13 @@ body {
 
 .menu {
 	font-size: 24px;
+	display: inline-block;
+}
+
+.menu li {
+	display: inline-block; /* Permite colocar cada etiqueta en bloque y ademas colocar otras etiquetas en linea */
+}
+
+.logotipo {
+	display: inline-block;
 }
