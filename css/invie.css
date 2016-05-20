@@ -37,8 +37,6 @@ body {
 
 .guitarras {
 	color: #1F313C; /* Color se puede en hex, rgb, name, rgba */
-	width: 800px;
-	margin: auto; /* Centra la etiqueta */
 }
 
 /* Selector descendente */
@@ -56,8 +54,6 @@ body {
 	background-image: url('../images/background.png'); /* Fondo de colores o imganes */
 	color: white;
 	padding: 20px;
-	width: 800px;
-	margin: auto;
 }
 
 .menu {
@@ -78,7 +74,7 @@ body {
 	margin-bottom: 70px;
 }
 
-.header {
+.contenedor {
 	width: 800px;
-	margin: auto;
+	margin: auto; /* Centra la etiqueta */
 }

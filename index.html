@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="css/invie.css" /> <!-- Permite localizar un archivo css externo -->
 	</head>
 	<body>
-		<header id="header" class="header"> <!-- Cabecera -->
+		<header id="header" class="header contenedor"> <!-- Cabecera con multiples clases-->
 			<figure class="logotipo"> <!-- logotipo -->
 				<img src="images/invie.png" width="186" height="60" alt="Logotipo Invie"/> <!-- Imagen -->
 			</figure>
@@ -26,11 +26,13 @@
 			</nav>
 		</header>
 		<section id="portada" class="portada"> <!-- Seccion portada -->
-			<h1 class="titulo">Guitarras inviesibles</h1> <!-- titulo -->
-			<h3 class="title-a">Sé la estrella de rock que siempre quisiste ser</h3> <!-- resumen -->
-			<button>Conoce mas</button> <!-- boton -->
+			<div class="contenedor"> <!-- div no añada valor semantico solo coloca efectos visuales -->
+				<h1 class="titulo">Guitarras inviesibles</h1> <!-- titulo -->
+				<h3 class="title-a">Sé la estrella de rock que siempre quisiste ser</h3> <!-- resumen -->
+				<button>Conoce mas</button> <!-- boton -->
+			</div>
 		</section>
-		<section id="guitarras" class="guitarras"> <!-- Seccion guitarras -->
+		<section id="guitarras" class="guitarras contenedor"> <!-- Seccion guitarras -->
 			<h2>Nuestras guitarras</h2> <!-- titulo -->
 			<article class="guitarra"> <!-- Articulo guitarra1 -->
 				<img src="images/invie-acustica.png" alt="Guitarrra Invie acustica" width="200" />
