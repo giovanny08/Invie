@@ -59,6 +59,8 @@ body {
 .menu {
 	font-size: 24px;
 	display: inline-block;
+	position: absolute;
+	right: 0;
 }
 
 .menu li {
@@ -82,7 +84,7 @@ body {
 .guitarra {
 	margin: 10px;
 	padding: 10px;
-	overflow: hidden; /* Quita el desborde entre etiquetas */
+	/* overflow: hidden; Quita el desborde entre etiquetas */
 	border: 1px solid #1F313C;
 }
 
@@ -92,10 +94,14 @@ body {
 
 .derecha{
 	float: right; /* Coloca una etiqueta en el lado que se desee */
+	position: relative;
+	top: -127px;
 }
 
 .izquierda {
 	float: left;
+	position: relative;
+	top: 80px;
 }
 
 .contenedor-guitarra-a {
@@ -104,4 +110,8 @@ body {
 
 .contenedor-guitarra-b {
 	margin-left: 370px;
+}
+
+.header {
+	position: relative;
 }
