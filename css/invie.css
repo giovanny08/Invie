@@ -125,3 +125,16 @@ button {
 .header {
 	position: relative;
 }
+
+.footer {
+	background: #273b47;
+}
+
+.contacto strong {
+	display: block;
+}
+
+.contacto a {
+	color: white;
+	text-decoration: none; /* Permite colocar o no decoracion al texto de la etiqueta */
+}
