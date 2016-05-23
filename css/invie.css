@@ -78,3 +78,30 @@ body {
 	width: 800px;
 	margin: auto; /* Centra la etiqueta */
 }
+
+.guitarra {
+	margin: 10px;
+	padding: 10px;
+	overflow: hidden; /* Quita el desborde entre etiquetas */
+	border: 1px solid #1F313C;
+}
+
+.guitarra ol {
+	padding: 0;
+}
+
+.derecha{
+	float: right; /* Coloca una etiqueta en el lado que se desee */
+}
+
+.izquierda {
+	float: left;
+}
+
+.contenedor-guitarra-a {
+	padding-left: 20px;
+}
+
+.contenedor-guitarra-b {
+	margin-left: 370px;
+}
