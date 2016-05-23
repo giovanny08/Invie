@@ -30,6 +30,14 @@ body {
 	margin: 0;
 }
 
+button {
+	border-radius: 5px;
+	background: #fd324e; /* Color de fondo */
+	color: white; /* Coloca el color a la fuente */
+	border: none; /* none desactiva el borde */
+	padding: 7px;
+}
+
 .title-a {
 	font-size: 24px;
 	margin-top: 0;
@@ -86,6 +94,8 @@ body {
 	padding: 10px;
 	/* overflow: hidden; Quita el desborde entre etiquetas */
 	border: 1px solid #1F313C;
+	border-radius: 8px; /* Permite colocar border redondos a las esquinas de la etiqueta */
+	/* border-radius: 10px 60px 30px 80px; Permite colocar diferentes valores a cada esquinta de la etiqueta */
 }
 
 .guitarra ol {
