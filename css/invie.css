@@ -76,6 +76,20 @@ body {
 	margin-left: 30px;
 }
 
+.menu li:before{ /* Coloca al li un pseudoelemento despues de el */
+	content: '∘'; /* Contenido del pseudoelemento */
+	font-size: 40px;
+	line-height: 20px; /* Alto de linea */
+	color: blue;
+}
+
+/*.menu li:after{ Coloca al li un pseudoelemento antes de el
+	content: '∘'; Contenido del pseudoelemento 
+	font-size: 40px;
+	line-height: 20px; Alto de linea 
+}
+*/
+
 .logotipo {
 	display: inline-block;
 }
