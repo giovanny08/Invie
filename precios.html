@@ -1,0 +1,73 @@
+<!DOCTYPE html> <!-- Permite saber que es un documento HTML. -->
+<html>
+	<head>
+		<title>Precios de tus mejores guitarras!!</title>
+		<meta charset="utf-8"> <!-- Permite soportar los caracteres del idioma español -->
+		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta' rel='stylesheet' type='text/css'> <!-- Fuentes css todadas de google fonts -->
+		<link rel="stylesheet" href="css/invie.css" /> <!-- Permite localizar un archivo css externo -->
+	</head>
+	<body>
+		<header id="header" class="header contenedor"> <!-- Cabecera con multiples clases-->
+			<figure class="logotipo"> <!-- logotipo -->
+				<img src="images/invie.png" width="186" height="60" alt="Logotipo Invie"/> <!-- Imagen -->
+			</figure>
+			<nav class="menu"> <!-- Menu -->
+				<ul> <!-- Lista no ordenada -->
+					<li> <!-- Item -->
+						<a href="index.html">Home</a> <!-- Enlace o ancla -->
+					</li>
+					<li> <!-- Item -->
+						<a href="index.html#guitarras">Guitarras</a> <!-- Enlace a index y a la ruta relativa #guitarras -->
+					</li>
+					<li> <!-- Item -->
+						<a href="precios.html">Precios</a> <!-- Enlace o ancla -->
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<footer class="footer">
+			<div class="contenedor">			
+				<div class="contacto">
+					<img src="images/invie-white.png" alt="logotipo blanco" />
+					<a href="tel:+573024456678"><strong>Telefono</strong> <span>3024456678</span></a> <!-- tel: permite invocar un programa para llamar al nuemero que se asigno-->
+					<a href="mailto:contacto@invie.com"><strong>E-mail</strong> <span>contacto@invie.com</span></a> <!-- mailto: permite invocar un programa para enviar correo al email asignado-->
+				</div>
+				<form class="formulario"> <!-- Formulario -->
+					<div class="col1">
+						<label for="nombre">Nombre</label> <!-- Descripcion -->
+						<input type="text" required id="nombre" name="nombre" /> <!-- Campo de texto, required exije que el campo sea texto, name permite enviar al servidor lo asignado al input-->
+						<label for="email">E-mail</label>
+						<input type="email" required id="email" name="email" /> <!-- Campo email, required exije que el campo sea tipo email -->
+						<div class="sexo">						
+							<label for="mujer">
+								<input type="radio" checked id="mujer" name="sexo" value="mujer" /> Mujer <!-- Crea una seleccion unica con radiobutton-->
+							</label>
+							<label for="hombre">
+								<input type="radio" id="hombre" name="sexo" value="hombre" /> Hombre <!-- Crea una seleccion unica con radiobutton -->
+							</label>
+						</div>
+						<div class="intereses">
+							<label for="cotizacion">
+								<input type="checkbox" checked id="cotizacion" name="intereses" value="cotizacion" /> Cotización <!--  Elemento de formulario de seleccion multiple -->
+							</label>
+							<label for="reclamos">
+								<input type="checkbox" id="reclamos" name="intereses" value="reclamos" /> Reclamos
+							</label>
+							<label for="comentarios">
+								<input type="checkbox" id="comentarios" name="intereses" value="comentarios" /> Comentarios
+							</label>
+							<label for="otros">
+								<input type="checkbox" id="otros" name="intereses" value="otros" /> Otros
+							</label>
+						</div>
+					</div>
+					<div class="col2">
+						<label for="comentarios">Comentarios</label>
+						<textarea name="comentarios" id="comentarios" cols="30" rows="7"></textarea> <!-- Campo de texto largo -->
+						<input type="submit" value="Enviar" class="button" /> <!-- Boton -->
+					</div>
+				</form>
+			</div>
+		</footer>
+	</body>
+</html>
