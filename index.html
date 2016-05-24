@@ -64,9 +64,39 @@
 					<a href="tel:+573024456678"><strong>Telefono</strong> <span>3024456678</span></a> <!-- tel: permite invocar un programa para llamar al nuemero que se asigno-->
 					<a href="mailto:contacto@invie.com"><strong>E-mail</strong> <span>contacto@invie.com</span></a> <!-- mailto: permite invocar un programa para enviar correo al email asignado-->
 				</div>
-				<div class="formulario">
-					formulario
-				</div>
+				<form class="formulario"> <!-- Formulario -->
+					<label for="nombre">Nombre</label> <!-- Descripcion -->
+					<input type="text" required id="nombre" name="nombre" /> <!-- Campo de texto, required exije que el campo sea texto, name permite enviar al servidor lo asignado al input-->
+					<label for="email">E-mail</label>
+					<input type="email" required id="email" name="email" /> <!-- Campo email, required exije que el campo sea tipo email -->
+					<div class="sexo">						
+						<label for="mujer">
+							<input type="radio" id="mujer" name="sexo" value="mujer" /> Mujer <!-- Crea una seleccion unica con radiobutton-->
+						</label>
+						<label for="hombre">
+							<input type="radio" id="hombre" name="sexo" value="hombre" /> Hombre <!-- Crea una seleccion unica con radiobutton -->
+						</label>
+					</div>
+					<div class="intereses">
+						<label for="cotizacion">
+							<input type="checkbox" id="cotizacion" name="intereses" value="cotizacion" /> Cotización <!--  Elemento de formulario de seleccion multiple -->
+						</label>
+						<label for="reclamos">
+							<input type="checkbox" id="reclamos" name="intereses" value="reclamos" /> Reclamos
+						</label>
+						<label for="comentarios">
+							<input type="checkbox" id="comentarios" name="intereses" value="comentarios" /> Comentarios
+						</label>
+						<label for="otros">
+							<input type="checkbox" id="otros" name="intereses" value="otros" /> Otros
+						</label>
+					</div>
+					<div>
+						<label for="comentarios">Comentarios</label>
+						<textarea name="comentarios" id="comentarios" cols="30" rows="7"></textarea> <!-- Campo de texto largo -->
+						<input type="submit" value="Enviar" /> <!-- Boton -->
+					</div>
+				</form>
 			</div>
 		</footer>
 	</body>
