@@ -30,7 +30,7 @@ body {
 	margin: 0;
 }
 
-button {
+.button {
 	border-radius: 5px;
 	background: #fd324e; /* Color de fondo */
 	color: white; /* Coloca el color a la fuente */
@@ -130,6 +130,13 @@ button {
 	background: #273b47;
 }
 
+.contacto {
+	display: flex;
+	width: 300px;
+	flex-wrap: wrap; /* Coloca los elementos en cada fila */
+	align-items: center;
+}
+
 .contacto strong {
 	display: block;
 }
@@ -137,4 +144,42 @@ button {
 .contacto a {
 	color: white;
 	text-decoration: none; /* Permite colocar o no decoracion al texto de la etiqueta */
+	margin: 10px 10px 10px 0;
+}
+
+.footer .contenedor {
+	display: flex; /* Coloca un elemento a lado del otro */
+	justify-content: space-between; /* Coloca una margen entre los elementos */
+}
+
+.formulario {
+	display: flex;
+	width: 400px;
+	color: white;
+	padding: 50px 10px;
+}
+
+.col1, .col2 {
+	display: flex;
+	flex-direction: column; /* Coloca los elementos verticalmente */
+}
+
+.col1 {
+	margin-right: 15px;
+}
+
+.col2 {
+	align-items: flex-start;
+}
+
+.intereses label {
+	font-size: 12px;
+}
+
+.formulario label, .sexo, .interese {
+	margin-bottom: 10px;
+}
+
+.sexo {
+	margin-top: 10px;
 }
