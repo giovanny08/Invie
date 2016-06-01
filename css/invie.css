@@ -54,7 +54,7 @@ input:focus, textarea:focus {
 
 /* Clase utilitaria */
 .contenedor {
-	width: 800px;
+	max-width: 800px;
 	margin: auto; /* Centra la etiqueta */
 	position: relative;
 }
@@ -261,4 +261,65 @@ input:focus, textarea:focus {
 
 .tabla {
 	margin: 50px 0;
+}
+
+/* Media querie con screen que es para pantalla y con and que es la condicion que se debe cumplir para que se ejecute ese media querie */
+@media screen and (max-width: 800px) {
+	/*body {
+		border: 10px solid red;
+	}*/
+
+	/* .contenedor {
+		width: auto; Coloca el ancho automaticamente 
+		max-width: 800px; Coloca el maximo ancho al contenedor
+	} */
+
+	/* Portada */
+	.titulo {
+		font-size: 45px;
+		margin-top: 30px;
+	}
+
+	.title-a {
+		font-size: 18px;
+	}
+
+	.portada {
+		height: auto;
+	}
+
+	.portada .button {
+		margin-bottom: 30px;
+		display: inline-block; /* Coloca el elemento en bloque para que tenga margen y adapta el ancho a su contenido */
+	}
+	/* Portada */
+
+	/* Guitarras */
+	.guitarras {
+		text-align: center;
+	}
+
+	.izquierda, .derecha {
+		float: none;
+		position: static;
+	}
+
+	.title-b {
+		margin: 0;
+	}
+
+	.guitarra li {
+		list-style: none; /* Quita elementos de la lista como numeros o viñetas */
+	}
+
+	/* De esta forma se cumplen dos clases dentro de un mismo elemento */
+	.guitarra.b {
+		height: auto;
+	}
+
+	.contenedor-guitarra-b {
+		position: static;
+		margin: 0;
+	}
+	/* Guitarras */
 }
