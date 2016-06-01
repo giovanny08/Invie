@@ -221,7 +221,7 @@ input:focus, textarea:focus {
 
 .footer .contenedor {
 	display: flex; /* Coloca un elemento a lado del otro */
-	justify-content: space-between; /* Coloca una margen entre los elementos */
+	justify-content: space-around; /* Coloca una margen entre los elementos */
 }
 
 .formulario {
@@ -320,6 +320,124 @@ input:focus, textarea:focus {
 	.contenedor-guitarra-b {
 		position: static;
 		margin: 0;
+	}
+
+	.contenedor-guitarra-a {
+		padding: 0;
+	}
+	/* Guitarras */
+
+	/* Footer */
+	.footer .contenedor {
+		justify-content: center;
+	}
+	/* Footer */	
+}
+
+@media screen and (max-width:767px) {
+	/* Footer */
+	.footer .contenedor {
+		display: block;
+	}
+	.contacto {
+		margin: 0 auto;
+	}
+
+	.formulario {
+		display: block;
+		margin: 0 auto;
+		width: 300px;
+	}
+
+	.intereses label {
+		display: block;
+		font-size: 16px;
+	}
+
+	.col1 {
+		margin: 0;
+	}
+
+	/* Selector de atributo Llama a una una segunda referencia de la etiqueta */
+	input[type="text"],
+	input[type="email"]{
+		font-size: 16px;
+		padding: 5px;
+	}
+
+	textarea {
+		width: 100%;
+	}
+
+	input[type="radio"],
+	input[type="checkbox"]{ 
+		zoom: 1.5;
+	}
+	/* Footer */
+}
+
+@media screen and (max-width: 650px) {
+	.header {
+		text-align: center;
+	}
+
+	.logotipo {
+		margin: 0;
+	}
+
+	.menu {
+		position: static;
+		display: block;
+	}
+
+	/* Afecta al primer li del menu */
+	.menu li:first-child {
+		margin: 0;
+	}
+
+	.menu ul {
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	/* Portada */
+	.menu li {
+		display: block;
+		margin: 0;
+		padding: 8px 0;
+		border-bottom: 1px solid white; /* Solo coloca borde abajo */
+	}
+
+	.menu li:before {
+		display: none; /* Hace que el pseudoelemento se oculte */
+	}
+
+	.menu li:first-child {
+		border-top: 1px solid white; 
+	}
+
+	.portada {
+		text-align: center;
+	}
+
+	.titulo {
+		font-size: 30px;
+	}
+
+	.title-a {
+		font-size: 16px;
+	}
+	/* Portada */
+
+	/* Guitarras */
+	.guitarra img {
+		width: 200px;
+		/* height: auto; */
+	}
+
+	.title-b {
+		font-size: 30px;
 	}
 	/* Guitarras */
 }
