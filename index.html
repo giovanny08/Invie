@@ -13,7 +13,8 @@
 				<figure class="logotipo"> <!-- logotipo -->
 					<img src="images/invie.png" width="186" height="60" alt="Logotipo Invie"/> <!-- Imagen -->
 				</figure>
-				<nav class="menu"> <!-- Menu -->
+				<span class="burguer-button icon-menu" id="burguer-button"></span>
+				<nav class="menu" id="menu"> <!-- Menu -->
 					<ul> <!-- Lista no ordenada -->
 						<li> <!-- Item -->
 							<a href="index.html">Home</a> <!-- Enlace o ancla -->
@@ -102,5 +103,13 @@
 				</form>
 			</div>
 		</footer>
+		<script>
+			var $burguerButton = document.getElementById('burguer-button');
+			var $menu = document.getElementById('menu');
+
+			$burguerButton.addEventListener('touchstart', function(){
+				$menu.classList.toggle('active'); // Coloca una clase si no la tiene y si la tiene la quita
+			});
+		</script>
 	</body>
 </html>
