@@ -38,7 +38,7 @@
 		<section id="guitarras" class="guitarras contenedor"> <!-- Seccion guitarras -->
 			<h2>Nuestras guitarras</h2> <!-- titulo -->
 			<article class="guitarra"> <!-- Articulo guitarra1 -->
-				<img class="derecha" src="images/invie-acustica.png" alt="Guitarrra Invie acustica" width="350" />
+				<img class="derecha" data-src="images/invie-acustica.png" alt="Guitarrra Invie acustica" width="350" />
 				<div class="contenedor-guitarra-a">
 					<h3 class="title-b">Invie Acustica</h3>
 					<ol> <!-- Lista ordenada -->
@@ -49,7 +49,7 @@
 				</div>
 			</article>
 			<article class="guitarra b"> <!-- Articulo guitarra2 -->
-				<img class="izquierda" src="images/invie-classic.png" alt="Guitarrra Invie classic" width="350" />
+				<img class="izquierda" data-src="images/invie-classic.png" alt="Guitarrra Invie classic" width="350" />
 				<div class="contenedor-guitarra-b">		
 					<h3 class="title-b">Invie Classic</h3>
 					<ol> <!-- Lista ordenada -->
@@ -63,7 +63,7 @@
 		<footer class="footer">
 			<div class="contenedor">			
 				<div class="contacto">
-					<img src="images/invie-white.png" alt="logotipo blanco" />
+					<img data-src="images/invie-white.png" alt="logotipo blanco" />
 					<a href="tel:+573024456678"><strong>Telefono</strong> <span>3024456678</span></a> <!-- tel: permite invocar un programa para llamar al nuemero que se asigno-->
 					<a href="mailto:contacto@invie.com"><strong>E-mail</strong> <span>contacto@invie.com</span></a> <!-- mailto: permite invocar un programa para enviar correo al email asignado-->
 				</div>
@@ -104,6 +104,7 @@
 				</form>
 			</div>
 		</footer>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.6.2/blazy.min.js"></script>
 		<script>
 			var $burguerButton = document.getElementById('burguer-button');
 			var $menu = document.getElementById('menu');
@@ -111,7 +112,7 @@
 			var consulta = window.matchMedia('(max-width: 500px)');
 
 			mediaQuery();
-			
+
 			consulta.addListener(mediaQuery);
 
 			function mediaQuery() {
@@ -129,6 +130,11 @@
 			function toggleMenu(){
 				$menu.classList.toggle('active'); // Coloca una clase si no la tiene y si la tiene la quita
 			};
+
+			// lazy loading
+			var bLazy = new Blazy({
+				selector: 'img'
+			});
 		</script>
 	</body>
 </html>
