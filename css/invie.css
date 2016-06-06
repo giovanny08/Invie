@@ -316,6 +316,7 @@ input:focus, textarea:focus {
 	left: 20px;
 	top: 20px;
 	z-index: 3;
+	color: white;
 }
 
 /* Media querie con screen que es para pantalla y con and que es la condicion que se debe cumplir para que se ejecute ese media querie */
@@ -328,6 +329,17 @@ input:focus, textarea:focus {
 		width: auto; Coloca el ancho automaticamente 
 		max-width: 800px; Coloca el maximo ancho al contenedor
 	} */
+
+	/* Precios */
+	.tabla {
+		margin: 50px 20px;
+	}
+
+	.tabla .contenedor {
+		overflow: auto; /* Propiedad de desbordamiento en auto que permite colocar un scroll para que no se desborde de la pantalla */
+		border: 1px solid #273b47;
+	}
+	/* Precios */
 
 	/* Portada */
 	.titulo {
@@ -459,6 +471,14 @@ input:focus, textarea:focus {
 	/* Portada */
 
 	.portada .contenedor {
+		position: static;
+	}
+
+	.header {
+		position: static;
+	}
+
+	.header .contenedor {
 		position: static;
 	}
 
