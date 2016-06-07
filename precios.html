@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="css/invie.css" /> <!-- Permite localizar un archivo css externo -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	</head>
-	<body>
+	<body class="precios">
 		<header id="header" class="header background"> <!-- Cabecera con multiples clases-->
 			<div class="contenedor">
 				<figure class="logotipo"> <!-- logotipo -->
@@ -116,6 +116,7 @@
 			</div>
 		</footer>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.6.2/blazy.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
 		<script>
 			var $burguerButton = document.getElementById('burguer-button');
 			var $menu = document.getElementById('menu');
@@ -142,10 +143,25 @@
 				$menu.classList.toggle('active'); // Coloca una clase si no la tiene y si la tiene la quita
 			};
 
+			function showMenu(){
+				$menu.classList.add('active'); // Agrega la clase active
+			};
+
+			function hideMenu(){
+				$menu.classList.remove('active'); // Borra la clase active
+			};
+
 			// lazy loading
 			var bLazy = new Blazy({
 				selector: 'img'
 			});
+
+			// Gestos touch
+			var $body = document.body; // Llama a body y lo guarda en una variable
+
+			var gestos = new Hammer($body);
+			gestos.on('swiperight', showMenu);
+			gestos.on('swipeleft', hideMenu);
 		</script>
 	</body>
 </html>

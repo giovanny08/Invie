@@ -312,11 +312,24 @@ input:focus, textarea:focus {
 	background: #395667;
 	text-align: center;
 	cursor: pointer;
-	position: absolute;
+	position: fixed;
 	left: 20px;
 	top: 20px;
 	z-index: 3;
 	color: white;
+	display: none;
+}
+
+.video-demo {
+	max-width: 500px;
+	width: 100%;
+	border: 5px solid #3c5b6e;
+}
+
+.video-demo-contenedor {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 80px;
 }
 
 /* Media querie con screen que es para pantalla y con and que es la condicion que se debe cumplir para que se ejecute ese media querie */
@@ -362,6 +375,10 @@ input:focus, textarea:focus {
 	/* Portada */
 
 	/* Guitarras */
+	.video-demo-contenedor {
+		margin-bottom: 30px;
+	}
+
 	.guitarras {
 		text-align: center;
 	}
@@ -469,6 +486,17 @@ input:focus, textarea:focus {
 
 @media screen and (max-width: 500px) {
 	/* Portada */
+	.portada .button {
+		display: block;
+	}
+
+	.precios .header .logotipo {
+		margin: 50px 0;
+	}
+
+	.burguer-button {
+		display: block;
+	}
 
 	.portada .contenedor {
 		position: static;
@@ -484,7 +512,7 @@ input:focus, textarea:focus {
 
 	.menu {
 		background: rgba(255, 60, 88, .8);
-		position: absolute;
+		position: fixed;
 		width: 100%;
 		left: -100%; /* Esconde el menu a la izquierda */
 		top: 0;
@@ -541,7 +569,17 @@ input:focus, textarea:focus {
 	.title-b {
 		font-size: 30px;
 	}
+
+	.video-demo-contenedor {
+		margin: 0 10px 30px 10px;
+	}
 	/* Guitarras */
+
+	/* footer */
+	.col2 {
+		align-items: stretch;
+	}
+	/* footer */
 }
 
 video {
