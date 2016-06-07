@@ -462,10 +462,7 @@ input:focus, textarea:focus {
 
 	input[type="text"],
 	input[type="email"]{
-<<<<<<< HEAD
 		margin-bottom: 25px;
-=======
->>>>>>> f995b22d587fdaf84e0487420ef8359bd4321c12
 		font-size: 20px;
 		padding: 5px;
 	}
