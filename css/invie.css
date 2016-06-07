@@ -425,12 +425,25 @@ input:focus, textarea:focus {
 	}
 	.contacto {
 		margin: 0 auto;
+		display: block;
+	}
+
+	.contacto a {
+		display: block;
 	}
 
 	.formulario {
 		display: block;
 		margin: 0 auto;
 		width: 300px;
+	}
+
+	.formulario label {
+		font-size: 20px;
+	}
+
+	.sexo label{
+		display: block;
 	}
 
 	.intereses label {
@@ -443,9 +456,13 @@ input:focus, textarea:focus {
 	}
 
 	/* Selector de atributo Llama a una una segunda referencia de la etiqueta */
+	input[type="text"] {
+		margin-bottom: 25px;
+	}
+
 	input[type="text"],
 	input[type="email"]{
-		font-size: 16px;
+		font-size: 20px;
 		padding: 5px;
 	}
 
